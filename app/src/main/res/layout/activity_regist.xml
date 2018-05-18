@@ -1,9 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bysj.myqq.activity.RegistActivity">
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f6f6f6" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_register_name"
+        style="@style/RegisterEt"
+        android:hint="@string/registerName" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+    <EditText
+        android:id="@+id/et_register_number"
+        style="@style/RegisterEt"
+        android:digits="1234567890"
+        android:hint="@string/registerNumber"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+    <EditText
+        android:id="@+id/et_register_school"
+        style="@style/RegisterEt"
+        android:hint="所属学校"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+    <EditText
+        android:id="@+id/et_register_worknum"
+        style="@style/RegisterEt"
+        android:digits="1234567890"
+        android:hint="学工号"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+
+    <EditText
+        android:id="@+id/et_register_psd"
+        style="@style/RegisterEt"
+        android:digits="@string/rule_password"
+        android:hint="@string/registerPsd"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+    <EditText
+        android:id="@+id/et_register_psdtwo"
+        style="@style/RegisterEt"
+        android:digits="@string/rule_password"
+        android:hint="@string/registerPsdtwo"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_register_isteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/selector_cb_jiazhupsd"
+            android:padding="5dp"
+            android:text="教师?"
+            android:textColor="#00a0e9"
+            android:textSize="11sp" />
+
+
+        <CheckBox
+            android:id="@+id/cb_register_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:button="@drawable/selector_cb_jiazhupsd"
+            android:padding="5dp"
+            android:text="女？"
+            android:textColor="#00a0e9"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="339dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/shape_zhece_bg"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

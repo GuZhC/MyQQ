@@ -3,4 +3,10 @@
     <string name="tab_one">消息</string>
     <string name="tab_two">联系人</string>
     <string name="tab_three">我</string>
+    <string name="registerName">用户名</string>
+    <string name="registerNumber">手机号</string>
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+    <string name="registerPsd">密码</string>
+    <string name="registerPsdtwo">确认密码</string>
+
 </resources>
