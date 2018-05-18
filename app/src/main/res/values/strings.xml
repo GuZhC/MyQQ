@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyQQ</string>
+    <string name="tab_one">消息</string>
+    <string name="tab_two">联系人</string>
+    <string name="tab_three">我</string>
+</resources>
