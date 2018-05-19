@@ -24,6 +24,7 @@ allprojects {
         maven {
             url "http://dl.bintray.com/glomadrian/maven"
         }
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
     }
 }
 

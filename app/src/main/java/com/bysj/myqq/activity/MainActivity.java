@@ -11,6 +11,7 @@ import com.bysj.myqq.R;
 import com.bysj.myqq.adapter.ViewPagerAdapter;
 import com.bysj.myqq.fragments.MessageFragment;
 import com.bysj.myqq.utils.ToastUtils;
+import com.google.gson.Gson;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

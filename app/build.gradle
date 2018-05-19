@@ -4,12 +4,17 @@ apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion 26
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.bysj.myqq"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86","arm64-v8a","x86_64"
+        }
     }
     buildTypes {
         release {
@@ -29,11 +34,18 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    compile 'com.google.code.gson:gson:2.3.1'
-    compile 'com.jakewharton:butterknife:8.5.1'
-    compile 'com.orhanobut:logger:2.1.1'
+//    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.orhanobut:logger:2.1.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.github.GrenderG:Toasty:1.2.8'
-    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.github.GrenderG:Toasty:1.2.8'
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'cn.bmob.android:bmob-sdk:3.5.5'
+    implementation 'cn.bmob.android:http-legacy:1.0'
+
+    // 基础功能 (必需)
+    implementation 'com.netease.nimlib:basesdk:5.1.0'
+    // 聊天室需要
+    implementation 'com.netease.nimlib:chatroom:5.1.0'
 }
