@@ -17,9 +17,18 @@ public class User extends BmobUser {
     String wyToken;
     String workNumber;
     String sex;
+    String wyaccid;
     String school;
     boolean isTeacher;
     BmobFile headimage;
+
+    public String getWyaccid() {
+        return wyaccid;
+    }
+
+    public void setWyaccid(String wyaccid) {
+        this.wyaccid = wyaccid;
+    }
 
     public BmobFile getHeadimage() {
         return headimage;

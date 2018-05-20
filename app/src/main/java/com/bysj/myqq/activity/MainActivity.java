@@ -9,6 +9,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.bysj.myqq.R;
 import com.bysj.myqq.adapter.ViewPagerAdapter;
+import com.bysj.myqq.fragments.MeFragment;
 import com.bysj.myqq.fragments.MessageFragment;
 import com.bysj.myqq.utils.ToastUtils;
 import com.google.gson.Gson;
@@ -43,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
 //                .setInActiveColor("#8e8e8e")//默认未选择颜色
                 .setBarBackgroundColor(R.color.white);//默认背景色
         mBottomNavigationBar
-                .addItem(new BottomNavigationItem(R.mipmap.main_icon_four, R.string.tab_one).setActiveColorResource(R.color.colorPrimary))
-                .addItem(new BottomNavigationItem(R.mipmap.main_icon_four, R.string.tab_two).setActiveColorResource(R.color.colorPrimary))
+                .addItem(new BottomNavigationItem(R.mipmap.betom_xiaoxi, R.string.tab_one).setActiveColorResource(R.color.colorPrimary))
+                .addItem(new BottomNavigationItem(R.mipmap.lianxiren, R.string.tab_two).setActiveColorResource(R.color.colorPrimary))
                 .addItem(new BottomNavigationItem(R.mipmap.main_icon_four, R.string.tab_three).setActiveColorResource(R.color.colorPrimary))
                 .setFirstSelectedPosition(0)//设置默认选择的按钮
                 .initialise();//所有的设置需在调用该方法前完成
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new MessageFragment());
         adapter.addFragment(new MessageFragment());
-        adapter.addFragment(new MessageFragment());
+        adapter.addFragment(new MeFragment());
         viewPager.setAdapter(adapter);
     }
 
